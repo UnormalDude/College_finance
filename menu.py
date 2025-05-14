@@ -7,17 +7,16 @@ def cost_of_attendance():
     with open("temp/coa", "r") as file:
         coa = file.readlines()
     if len(coa) < 4:
-        print("\n\t\t" + text_edit("red") + text_edit("bold") + "No COA to read. Exiting\n\n")
+        print("\n\t\t" + text_edit("red") + text_edit("bold") + "No COA to read. Exiting\n\n" + text_edit("reset"))
         time.sleep(1)
-        exit()
+    else:
+        print(f"Tuition: ${coa[0]}")
+        print(f"Room: ${coa[1]}")
+        print(f"Food: ${coa[2]}")
+        print(f"Fees: ${coa[3]}")
+        print(f"Total: ${coa[4]}")
 
-    print(f"Tuition: ${coa[0]}")
-    print(f"Room: ${coa[1]}")
-    print(f"Food: ${coa[2]}")
-    print(f"Fees: ${coa[3]}")
-    print(f"Total: ${coa[4]}")
-
-    input("\n\t" + text_edit("italic") + "Press Enter To Continue..." + text_edit("reset"))
+        input("\n\t" + text_edit("italic") + "Press Enter To Continue..." + text_edit("reset"))
 
 def calc_wage():
     print("This function will let you see how many hours you need at your current rate to afford a percentage fo the cost.")

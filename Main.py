@@ -38,7 +38,7 @@ while True:
         i += 1
 
     # Get user input for menu selection
-    menu_choice = input("\n\t>")
+    menu_choice = input("\n\t>\t")
 
     clear_terminal()  # Clear screen before executing choice
 
