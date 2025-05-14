@@ -6,6 +6,10 @@ from fancy_text import text_edit
 def cost_of_attendance():
     with open("temp/coa", "r") as file:
         coa = file.readlines()
+    if len(coa) < 4:
+        print("\n\t\t" + text_edit("red") + text_edit("bold") + "No COA to read. Exiting\n\n")
+        time.sleep(1)
+        exit()
 
     print(f"Tuition: ${coa[0]}")
     print(f"Room: ${coa[1]}")
@@ -23,7 +27,7 @@ def calc_wage():
     percentage = input("\nplease type the percentage of the tuition you are looking to pay: \n\t>")
     user_input = input("Would you rather input:\n1 - An Hourly Rate\n2 - Hours you can work a week")
 
-    if user_input == "1":
+    #if user_input == "1":
         
 
 def change_coa():
