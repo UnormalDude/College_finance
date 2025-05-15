@@ -1,8 +1,9 @@
-import os
+#MADE BY JOHN CUNNINGTON
+#THIS CODE IS A CUSTOM MODULE TO ALLOW FOR EASIER CHANGING OF FORMATTING OF A PYTHON SCRIPT WHILE BEING EXTREMELY MINIMAL. NO OTHER LIBRARIES ARE NEEDED
 
 def text_edit(name):
 
-    colors = ['red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white' ]
+    colors = ['red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white']
     color_codes = ['31', '32', '33', '34', '35', '36', '37']
 
     if name in colors:
